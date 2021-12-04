@@ -1,6 +1,9 @@
-from flask import Blueprint, render_template
+import os
+
+from flask import Blueprint, render_template, request, jsonify
 from flask_login import login_required, current_user
 from . import db
+import json
 
 main = Blueprint('main', __name__)
 
