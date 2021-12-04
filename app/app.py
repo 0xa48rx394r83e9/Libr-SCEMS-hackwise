@@ -2,11 +2,11 @@ from flask import Flask
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
-socketio = SocketIO(app)
+socketio = SocketIO(app, logger=True, engineio_logger=True)
 
-from .main import *
+from .pain import *
 
-app.register_blueprint(main, url_prefix='/main')
+app.register_blueprint(pain, url_prefix='/pain')
 
 if __name__ == '__main__':
     socketio.run(app)

@@ -13,7 +13,7 @@ const template_title = Handlebars.compile(document.querySelector('#load-channel-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Connect to a web-socket. Used for sending and recieving messages dynamically
-    var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
+    var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + '/pain');
 
     // Get existing display name from local storage and display on site
     var username = localStorage.getItem('display_name');

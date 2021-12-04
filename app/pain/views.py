@@ -2,13 +2,14 @@ from flask import Blueprint, render_template, request, jsonify
 from flask_socketio import SocketIO, emit, join_room, leave_room
 from . import pain
 from ..app import socketio
+import jsonify
 
 # Channel Data Global Variables
 channel_list = {"general": [] }
 present_channel = {"initial":"general"}
 
-@pain.route("/chat", methods=["POST", "GET"])
-def index():
+@pain.route("/pain", methods=["POST", "GET"])
+def index(methods=['GET', 'POST']):
     if request.method == "GET":
         # Pass channel list to, and use jinja to display already created channels
         return render_template("vindex.html", channel_list=channel_list)

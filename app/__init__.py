@@ -34,6 +34,6 @@ def create_app():
 	
 	from .pain import pain
 
-	app.register_blueprint(pain, url_prefix='/pain')
+	app.register_blueprint(pain)
 
 	return app
