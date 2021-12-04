@@ -24,6 +24,36 @@
 								Profile
 							</a>
 							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.dashboard') }}" class="navbar-item">
+								Dashboard
+							</a>
+							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.classroom') }}" class="navbar-item">
+								Classroom
+							</a>
+							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.courses') }}" class="navbar-item">
+								Courses
+							</a>
+							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.past_papers') }}" class="navbar-item">
+								Papers
+							</a>
+							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.projects') }}" class="navbar-item">
+								Projects
+							</a>
+							{% endif %}
+							{% if current_user.is_authenticated %}
+							<a href="{{ url_for('main.universities') }}" class="navbar-item">
+								Universities
+							</a>
+							{% endif %}
 							{% if not current_user.is_authenticated %}
 							<a href="{{ url_for('auth.login') }}" class="navbar-item">
 								Login
