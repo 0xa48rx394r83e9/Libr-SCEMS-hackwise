@@ -1,0 +1,305 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+
+<body>
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+    <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+    <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+      <img
+           class="rounded-pill img-fluid"
+           width="55"
+           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fbusiness-and-finance-related-hand-gestures%2F256%2Fface_female_blank_user_avatar_mannequin-512.png&f=1&nofb=1"
+           alt="">
+      <div class="ms-2">
+        <h5 class="fs-6 mb-0">
+          <a class="text-decoration-none" href="#">Jane Doe</a>
+        </h5>
+        <p class="mt-1 mb-0"></p>
+      </div>
+    </div>
+  
+    <div class="search position-relative text-center px-4 py-3 mt-2">
+      <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+      <i class="fa fa-search position-absolute d-block fs-6"></i>
+    </div>
+  
+    <ul class="categories list-unstyled">
+      <li class="has-dropdown">
+        <i class="uil-estate fa-fw"></i><a href="#"><b style="color: crimson;"> Dashboard</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <i class="uil-folder"></i><a href="#"><b style="color: orange;"> Files</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-calendar-alt"></i><a href="#"><b style="color: yellow;"> Calendar</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href="#"><b style="color: lime;"> Mailbox</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-shopping-cart-alt"></i><a href="#"><b style="color: turquoise;"> Classrooms</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-bag"></i><a href="#"><b style="color: blue;"> Practice</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <i class="uil-setting"></i><a href="#"><b style="color: purple;"> Settings</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-chart-pie-alt"></i><a href="#"><b style="color: violet;"> Past Papers</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-panel-add"></i><a href="#"><b style="color: gold;"> Assignments</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-language-selection"></i><a href="#"><b style="color: skyblue;"> Language Menu</b></a>
+          <select name="language-picker-select" id="language-picker-select">
+            <option>Deutsch</option>
+            <option>English</option>
+            <option>Français</option>
+            <option>Italiano</option>
+            <option>普通话</option>
+            <option>日本語</option>
+            <option>한국어</option>
+            <option>Bahasa Melayu</option>
+            <!-- other language options -->
+          </select>
+      <li class="">
+        <i class="uil-map-marker"></i><a href="#"><b style="color: red;">Help Line</b></a>
+      </li>
+    </ul>
+  </aside>
+    <div class="main">
+        <h1>Courses</h1>
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv211-bb-16-kids_2.jpg%3Fw%3D400%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26auto%3Dformat%26fm%3Dpjpg%26q%3D75%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-1.1.1%26s%3D97a7d26c4530f023d7a4d3530df59ed2&f=1&nofb=1"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mathematics Beginner 1</h2>
+                <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv211-bb-16-kids_2.jpg%3Fw%3D400%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26auto%3Dformat%26fm%3Dpjpg%26q%3D75%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-1.1.1%26s%3D97a7d26c4530f023d7a4d3530df59ed2&f=1&nofb=1"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mathematics Beginner 2</h2>
+                <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv211-bb-16-kids_2.jpg%3Fw%3D400%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26auto%3Dformat%26fm%3Dpjpg%26q%3D75%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-1.1.1%26s%3D97a7d26c4530f023d7a4d3530df59ed2&f=1&nofb=1"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mathematics Beginner 3</h2>
+                <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv211-bb-16-kids_2.jpg%3Fw%3D400%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26auto%3Dformat%26fm%3Dpjpg%26q%3D75%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-1.1.1%26s%3D97a7d26c4530f023d7a4d3530df59ed2&f=1&nofb=1"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mathematics Beginner 4</h2>
+                <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv211-bb-16-kids_2.jpg%3Fw%3D400%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26auto%3Dformat%26fm%3Dpjpg%26q%3D75%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-1.1.1%26s%3D97a7d26c4530f023d7a4d3530df59ed2&f=1&nofb=1"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mathematics Beginner 5</h2>
+                <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.sAl4aBbL4eV8mA2ZTehB-QHaE8%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Novice 1</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.sAl4aBbL4eV8mA2ZTehB-QHaE8%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Novice 2</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.sAl4aBbL4eV8mA2ZTehB-QHaE8%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Novice 3</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.sAl4aBbL4eV8mA2ZTehB-QHaE8%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Novice 4</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.sAl4aBbL4eV8mA2ZTehB-QHaE8%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Novice 5</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fmath-teacher-picture-id510221128&f=1&nofb=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Expert 1</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fmath-teacher-picture-id510221128&f=1&nofb=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Expert 2</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fmath-teacher-picture-id510221128&f=1&nofb=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Expert 3</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fmath-teacher-picture-id510221128&f=1&nofb=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Mathematics Expert 4</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kiRoTZaaLdRS_btTI-27MAHaFj%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Turkish Level 1</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kiRoTZaaLdRS_btTI-27MAHaFj%26pid%3DApi&f=1"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Turkish Level 2</h2>
+                  <p class="card_text">Explore this course for free, Brought to You by Cambridge Education for all</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+    </div> 
+</body>
