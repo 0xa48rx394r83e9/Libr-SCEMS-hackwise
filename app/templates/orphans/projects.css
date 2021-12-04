@@ -86,52 +86,6 @@ body {
 	color: var(--dk-gray-500);
 }
 
-.sidebar ul > li.has-dropdown > a:after {
-	content: '\eb3a';
-	font-family: unicons-line;
-	font-size: 1rem;
-	line-height: 1.8;
-	float: right;
-	color: var(--dk-gray-500);
-	transition: all .3s ease-in-out;
-}
-
-.sidebar ul .opened > a:after {
-	transform: rotate(-90deg);
-}
-
-/* Start dropdown menu */
-.sidebar ul .sidebar-dropdown {
-	padding-top: 10px;
-	padding-left: 30px;
-	display: none;
-}
-.sidebar ul .sidebar-dropdown.active {
-	display: block;
-}
-
-.sidebar ul .sidebar-dropdown > li > a {
-  font-size: .85rem;
-	padding: .5rem 0;
-	display: block;
-}
-/* End dropdown menu */
-
-.show-sidebar {
-	transform: translateX(-270px);
-}
-
-@media (max-width: 767px) {
-	.sidebar ul > li {
-		padding-top: 12px;
-		padding-bottom: 12px;
-	}
-
-	.sidebar .search {
-		padding: 10px 0 10px 30px
-	}
-}
-
 /* Main */
 
 .main {

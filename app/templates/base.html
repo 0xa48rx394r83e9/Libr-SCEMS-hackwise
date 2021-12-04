@@ -8,11 +8,23 @@
     <title>Flask Auth Example</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     {% block head %}
+	<style type="text/css">
+		#background {
+			background: linear-gradient(to bottom right,#fec811, #e73600, #b400cf); 
+			background-size: 2000% 100%;
+			animation: gradient 4s linear infinite;
+			animation-direction: alternate;
+		}
+		@keyframes gradient {
+			0% {background-position: 0%}
+			100% {background-position: 100%}
+		}		
+	</style>
     {% endblock head %}
 </head>
 
 <body>
-    <section class="hero is-dark is-fullheight" style="background-image: linear-gradient(to bottom right,#fec811, #e73600, #b400cf);">
+    <section id="background" class="hero is-dark is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
