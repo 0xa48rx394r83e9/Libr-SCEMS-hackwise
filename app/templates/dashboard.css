@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+@import "//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome";
 
 :root {
 	--dk-gray-100: #F3F4F6;
@@ -24,10 +25,13 @@
 }
 
 body {
-	font-family: 'Inter', sans-serif;
-	background-color: var(--dk-darker-bg);
+	font-family: 'Biome';
+	background-image: linear-gradient(to bottom right, 
+	#ff2656, #173df7);
 	font-size: .925rem;
 }
+/*font-family: 'Inter', sans-serif;*/
+/*background-color: var(--dk-darker-bg);*/
 
 #wrapper {
 	margin-left: var(--sidebar-width);
@@ -275,9 +279,11 @@ body {
 -------------------------------- */
 
 .navbar {
-	background-color: var(--navbar-bg-color) !important;
 	border: none !important;
+	background-image: linear-gradient(to right,
+	#aa29c9, #1180df,#34e084);
 }
+/*background-color: var(--navbar-bg-color) !important;*/
 .navbar .dropdown-menu {
 	right: auto !important;
 	left: 0 !important;

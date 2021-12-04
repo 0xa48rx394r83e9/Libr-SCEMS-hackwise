@@ -7,120 +7,152 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="dashboard.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome" rel="stylesheet" type="text/css"/>
+    <script>"use strict";
+      function changeColor() {
+//rgb
+console.log('event fired');
+var colors = [0, 0, 0];
+var hour = new Date().getHours();
+console.log(hour);
+
+//Will get an valid rgb color
+var color = parseInt(255/24*hour);
+console.log(color);
+for(var i = 0; i < colors.length; i++) {
+  colors[i] = color;
+}
+//add the color to the element you want:
+document.body.style.backgroundColor = "rgb("+colors[0] + "," + colors[1] + "," + colors[2] + ")";
+console.log("event fired. color get:" + colors[0] + colors[1] + colors[2]);
+}</script>
 </head>
 
 
 <body>
-    <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
-        <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
-        <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
-          <img
-               class="rounded-pill img-fluid"
-               width="65"
-               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fbusiness-and-finance-related-hand-gestures%2F256%2Fface_female_blank_user_avatar_mannequin-512.png&f=1&nofb=1"
-               alt="">
-          <div class="ms-2">
-            <h5 class="fs-6 mb-0">
-              <a class="text-decoration-none" href="#">Jane Doe</a>
-            </h5>
-            <p class="mt-1 mb-0"></p>
-          </div>
-        </div>
-      
-        <div class="search position-relative text-center px-4 py-3 mt-2">
-          <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
-          <i class="fa fa-search position-absolute d-block fs-6"></i>
-        </div>
-      
-        <ul class="categories list-unstyled">
-          <li class="has-dropdown">
-            <i class="uil-estate fa-fw"></i><a href="#"> Dashboard</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="">
-            <i class="uil-folder"></i><a href="#"> File manager</a>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-calendar-alt"></i><a href="#"> Calender</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-envelope-download fa-fw"></i><a href="#"> Mailbox</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-shopping-cart-alt"></i><a href="#"> Classrooms</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-bag"></i><a href="#"> Practise</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="">
-            <i class="uil-setting"></i><a href="#"> Settings</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-chart-pie-alt"></i><a href="#"> Past Papers</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <i class="uil-panel-add"></i><a href="#"> Assignments</a>
-            <ul class="sidebar-dropdown list-unstyled">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">ipsum dolor</a></li>
-              <li><a href="#">dolor ipsum</a></li>
-              <li><a href="#">amet consectetur</a></li>
-              <li><a href="#">ipsum dolor sit</a></li>
-            </ul>
-          </li>
-          <li class="">
-            <i class="uil-map-marker"></i><a href="#"> <b style="color: salmon;">Help Line</b></a>
-          </li>
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+    <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+    <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+      <img
+           class="rounded-pill img-fluid"
+           width="55"
+           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fbusiness-and-finance-related-hand-gestures%2F256%2Fface_female_blank_user_avatar_mannequin-512.png&f=1&nofb=1"
+           alt="">
+      <div class="ms-2">
+        <h5 class="fs-6 mb-0">
+          <a class="text-decoration-none" href="#">Jane Doe</a>
+        </h5>
+        <p class="mt-1 mb-0"></p>
+      </div>
+    </div>
+  
+    <div class="search position-relative text-center px-4 py-3 mt-2">
+      <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+      <i class="fa fa-search position-absolute d-block fs-6"></i>
+    </div>
+  
+    <ul class="categories list-unstyled">
+      <li class="has-dropdown">
+        <i class="uil-estate fa-fw"></i><a href="#"><b style="color: crimson;"> Dashboard</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
         </ul>
-      </aside>
+      </li>
+      <li class="">
+        <i class="uil-folder"></i><a href="#"><b style="color: orange;"> Projects</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-calendar-alt"></i><a href="#"><b style="color: yellow;"> Calendar</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href="#"><b style="color: lime;"> Mailbox</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-shopping-cart-alt"></i><a href="#"><b style="color: turquoise;"> Classrooms</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-bag"></i><a href="#"><b style="color: blue;"> Practice</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <i class="uil-setting"></i><a href="#"><b style="color: purple;"> Settings</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-chart-pie-alt"></i><a href="#"><b style="color: violet;"> Past Papers</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-panel-add"></i><a href="#"><b style="color: gold;"> Assignments</b></a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#">ipsum dolor</a></li>
+          <li><a href="#">dolor ipsum</a></li>
+          <li><a href="#">amet consectetur</a></li>
+          <li><a href="#">ipsum dolor sit</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-language-selection"></i><a href="#"><b style="color: skyblue;"> Language Menu</b></a>
+          <select name="language-picker-select" id="language-picker-select">
+            <option>Deutsch</option>
+            <option>English</option>
+            <option>Français</option>
+            <option>Italiano</option>
+            <option>普通话</option>
+            <option>日本語</option>
+            <option>한국어</option>
+            <option>Bahasa Melayu</option>
+            <!-- other language options -->
+          </select>
+      <li class="">
+        <i class="uil-map-marker"></i><a href="#"><b style="color: red;">Help Line</b></a>
+      </li>
+    </ul>
+  </aside>
       
       <section id="wrapper">
         <nav class="navbar navbar-expand-md">
@@ -174,9 +206,9 @@
                   <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
                   <div class="ms-3">
                     <div class="d-flex align-items-center">
-                      <h3 class="mb-0">1,245</h3> <span class="d-block ms-2">Emails</span>
+                      <h3 class="mb-0">1,245 </h3> <span class="d-block ms-2"> Emails</span>
                     </div>
-                    <p class="fs-normal mb-0">Dont, worry! You got this!</p>
+                    <p class="fs-normal mb-0">Don't worry! You got this!</p>
                   </div>
                 </div>
               </div>
@@ -185,9 +217,9 @@
                   <i class="uil-file fs-2 text-center bg-danger rounded-circle"></i>
                   <div class="ms-3">
                     <div class="d-flex align-items-center">
-                      <h3 class="mb-0">5,245</h3> <span class="d-block ms-2">Task Completed</span>
+                      <h3 class="mb-0">5,245 </h3> <span class="d-block ms-2"> Tasks Completed</span>
                     </div>
-                    <p class="fs-normal mb-0">Wow thats an amaizing amount</p>
+                    <p class="fs-normal mb-0">Wow, That's an amazing amount!</p>
                   </div>
                 </div>
               </div>
@@ -196,7 +228,7 @@
                   <i class="uil-users-alt fs-2 text-center bg-success rounded-circle"></i>
                   <div class="ms-3">
                     <div class="d-flex align-items-center">
-                      <h3 class="mb-0">23</h3> <span class="d-block ms-2">Assignemnts</span>
+                      <h3 class="mb-0">23 </h3> <span class="d-block ms-2"> Assignemnts</span>
                     </div>
                     <p class="fs-normal mb-0">Take it slow! Learn at your own pace!</p>
                   </div>
@@ -214,38 +246,38 @@
                   <!-- <h4>Admins:</h4> -->
                   <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
+                      <img class="img-circle rounded-circle"
                            width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148906966/small/1501685402/enhance"
+                           src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/man5-512.png"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
-                      <p class="mb-0">Mathematics | class at 3pm</p>
+                      <h3 class="fs-5 mb-1">Romão Waldemar</h3>
+                      <p class="mb-0">Mathematics | Class at 3pm</p>
                     </div>
                   </div>
                   <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
-                           width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907137/small/1501685404/enhance"
+                      <img class="img-circle rounded-circle"
+                           width=75 height=75
+                           src="https://www.shareicon.net/data/2016/09/15/829470_user_512x512.png"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
-                      <p class="mb-0">English | class at 7pm</p>
+                      <h3 class="fs-5 mb-1">Mithridates Ginka</h3>
+                      <p class="mb-0">English | Class at 7pm</p>
                     </div>
                   </div>
                   <div class="admin d-flex align-items-center rounded-2 p-3">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
+                      <img class="img-circle rounded-circle"
                            width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907019/small/1501685403/enhance"
+                           src="https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_3-512.png"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
-                      <p class="mb-0">Greek | class at 5pm</p>
+                      <h3 class="fs-5 mb-1">Kveta Horea</h3>
+                      <p class="mb-0">Greek | Class at 5pm</p>
                     </div>
                   </div>
                 </div>
@@ -255,37 +287,37 @@
                   <!-- <h4>Moderators:</h4> -->
                   <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
+                      <img class="img-circle rounded-circle"
                            width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907114/small/1501685404/enhance"
+                           src="https://brr.gov.mk/wp-content/uploads/2020/05/business-woman-icon-74.png"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
-                      <p class="mb-0">Wellbeing | class in 25 min!</p>
+                      <h3 class="fs-5 mb-1">Amandeep Maitland</h3>
+                      <p class="mb-0">Wellbeing | Class in 25 min!</p>
                     </div>
                   </div>
                   <div class="admin d-flex align-items-center rounded-2 p-3 mb-4">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
+                      <img class="img-circle rounded-circle"
                            width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907086/small/1501685404/enhance"
+                           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZNG2V1kv_IH_8aTfCrLyEYKVDuCeuKoHaQ&usqp=CAU"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
-                      <p class="mb-0">Health and life skills | 1 assignment to complete</p>
+                      <h3 class="fs-5 mb-1">Lūcija Adrian</h3>
+                      <p class="mb-0">Health and Life Skills | 1 Assignment to complete</p>
                     </div>
                   </div>
                   <div class="admin d-flex align-items-center rounded-2 p-3">
                     <div class="img">
-                      <img class="img-fluid rounded-pill"
+                      <img class="img-circle rounded-circle"
                            width="75" height="75"
-                           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance"
+                           src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png"
                            alt="admin">
                     </div>
                     <div class="ms-3">
-                      <h3 class="fs-5 mb-1">Joge Lucky</h3>
+                      <h3 class="fs-5 mb-1">Lea Jean-Paul</h3>
                       <p class="mb-0">Biology | Nothing for today! :)</p>
                     </div>
                   </div>
@@ -295,28 +327,28 @@
           </section>
       
           <section class="statis mt-4 text-center">
-            <h1>Your contribuition to the environment</h1>
-            <p>Through our sponsers and your hard work staying in school, together we are helping the environment!</p>
+            <h1>Your Contribuition to the Environment</h1>
+            <p>Through our sponsors and your hard work staying in school, together we are helping the environment!</p>
             <div class="row">
               <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <div class="box bg-primary p-3">
                   <i class="uil-eye"></i>
                   <h3>5,154</h3>
-                  <p class="lead">Points Eared</p>
+                  <p class="lead">Points Earned</p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <div class="box bg-danger p-3">
                   <i class="uil-user"></i>
                   <h3>245</h3>
-                  <p class="lead">Dollars Raised for children in need</p>
+                  <p class="lead">Dollars Raised for Children in Need</p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
                 <div class="box bg-warning p-3">
                   <i class="uil-shopping-cart"></i>
                   <h3>5,154</h3>
-                  <p class="lead">KG Carbon Dioxide saved</p>
+                  <p class="lead">PPM Carbon Dioxide Saved</p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3">

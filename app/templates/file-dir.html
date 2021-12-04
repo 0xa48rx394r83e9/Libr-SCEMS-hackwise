@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+        #container {
+            width: 80%;
+            float: right;
+            margin-right: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="file-dir.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+
+
+<body>
+
+
+    <div>
+
+
+        <div style="display: inline-block;">
+            <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+                <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+                <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+                    <img
+                        class="rounded-pill img-fluid"
+                        width="55"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fbusiness-and-finance-related-hand-gestures%2F256%2Fface_female_blank_user_avatar_mannequin-512.png&f=1&nofb=1"
+                        alt="">
+                    <div class="ms-2">
+                    <h5 class="fs-6 mb-0">
+                        <a class="text-decoration-none" href="#">Jane Doe</a>
+                    </h5>
+                    <p class="mt-1 mb-0"></p>
+                    </div>
+                </div>
+                
+                <div class="search position-relative text-center px-4 py-3 mt-2">
+                    <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+                    <i class="fa fa-search position-absolute d-block fs-6"></i>
+                </div>
+                
+                <ul class="categories list-unstyled">
+                    <li class="has-dropdown">
+                    <i class="uil-estate fa-fw"></i><a href="#"><b style="color: crimson;"> Dashboard</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="">
+                    <i class="uil-folder"></i><a href="#"><b style="color: orange;"> Projects</b></a>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-calendar-alt"></i><a href="#"><b style="color: yellow;"> Calendar</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-envelope-download fa-fw"></i><a href="#"><b style="color: lime;"> Mailbox</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-shopping-cart-alt"></i><a href="#"><b style="color: turquoise;"> Classrooms</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-bag"></i><a href="#"><b style="color: blue;"> Practice</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="">
+                    <i class="uil-setting"></i><a href="#"><b style="color: purple;"> Settings</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-chart-pie-alt"></i><a href="#"><b style="color: violet;"> Past Papers</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-panel-add"></i><a href="#"><b style="color: gold;"> Assignments</b></a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">ipsum dolor</a></li>
+                        <li><a href="#">dolor ipsum</a></li>
+                        <li><a href="#">amet consectetur</a></li>
+                        <li><a href="#">ipsum dolor sit</a></li>
+                    </ul>
+                    </li>
+                    <li class="has-dropdown">
+                    <i class="uil-language-selection"></i><a href="#"><b style="color: skyblue;"> Language Menu</b></a>
+                        <select name="language-picker-select" id="language-picker-select">
+                        <option>Deutsch</option>
+                        <option>English</option>
+                        <option>Français</option>
+                        <option>Italiano</option>
+                        <option>普通话</option>
+                        <option>日本語</option>
+                        <option>한국어</option>
+                        <option>Bahasa Melayu</option>
+                        <!-- other language options -->
+                        </select>
+                    <li class="">
+                    <i class="uil-map-marker"></i><a href="#"><b style="color: red;">Help Line</b></a>
+                    </li>
+                </ul>
+                </aside>
+        </div>
+    
+        <div id="container" style="display: inline-block;">
+
+                    <!--for demo wrap-->
+                    <h1>Curriculum Syllabus and Curated Past Paper Selection</h1>
+                    <p>View Past Papers for all Levels, Hand-Picked by our Teaching Professionals</p>
+                    <h2 style="color: white;">Curriculum Syllabus</h2>
+                    <div class="tbl-header">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                        <thead>
+                            <tr>
+                            <th>Subject</th>
+                            <th>ID</th>
+                            <th>Exam board</th>
+                            <th>Year published</th>
+                            <th>Difficulty Level</th>
+                            </tr>
+                        </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                            <td>Psychology</td>
+                            <td>328109</td>
+                            <td>Cambridge</td>
+                            <td>2018</td>
+                            <td>2/10</td>
+                            </tr>
+                            <tr>
+                            <td>Biology</td>
+                            <td>25266</td>
+                            <td>Cambridge</td>
+                            <td>2002</td>
+                            <td>2/10</td>
+                            </tr>
+                            <tr>
+                            <td>Chemistry</td>
+                            <td>25454</td>
+                            <td>IB</td>
+                            <td>2021</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>2542554</td>
+                            <td>AQA</td>
+                            <td>2016</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Physics</td>
+                            <td>452245</td>
+                            <td>CIE</td>
+                            <td>2008</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>PE</td>
+                            <td>545jh24</td>
+                            <td>Edexcel</td>
+                            <td>2009</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Digital Sciences</td>
+                            <td>245hgk25</td>
+                            <td>Edexcel</td>
+                            <td>2020</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Design & Technology</td>
+                            <td>2534kjhgh</td>
+                            <td>Cambridge</td>
+                            <td>2005</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>English</td>
+                            <td>235gh242</td>
+                            <td>AQA</td>
+                            <td>2019</td>
+                            <td>3/10</td>
+                            </tr>
+                            <tr>
+                            <td>Computer Science</td>
+                            <td>678945hgjk25</td>
+                            <td>Edexcel</td>
+                            <td>2007</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>ICT</td>
+                            <td>45guyh2</td>
+                            <td>CIE</td>
+                            <td>2017</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>Food and Nutrition</td>
+                            <td>534254khgj2</td>
+                            <td>IB</td>
+                            <td>2014</td>
+                            <td>8/10</td>
+                            </tr>
+                            <tr>
+                            <td>Film Studies</td>
+                            <td>345hgjk4</td>
+                            <td>Edexcel</td>
+                            <td>2007</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>4235gkj2</td>
+                            <td>AQA</td>
+                            <td>2014</td>
+                            <td>6/10</td>
+                            </tr>
+                            <tr>
+                            <td>Spanish</td>
+                            <td>25jkh24</td>
+                            <td>AQA</td>
+                            <td>2019</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>French</td>
+                            <td>534hlkj23</td>
+                            <td>IB</td>
+                            <td>2018</td>
+                            <td>9/10</td>
+                            </tr>
+                            <tr>
+                            <td>Japanese</td>
+                            <td>435g25</td>
+                            <td>Edexcel</td>
+                            <td>2015</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>uyig2354</td>
+                            <td>Cambridge</td>
+                            <td>2015</td>
+                            <td>8/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>245ghk</td>
+                            <td>CIE</td>
+                            <td>2019</td>
+                            <td>6/10</td>
+                            </tr>
+                            <tr>
+                            <td>Engineering</td>
+                            <td>345jlk2</td>
+                            <td>AQA</td>
+                            <td>2003</td>
+                            <td>3/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>4352jkh425</td>
+                            <td>AQA</td>
+                            <td>2009</td>
+                            <td>5.4/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>525jkl4</td>
+                            <td>AQA</td>
+                            <td>2005</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Biology</td>
+                            <td>5253hl5</td>
+                            <td>Edexcel</td>
+                            <td>2013</td>
+                            <td>6/10</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <h2 style="color: white;">Past Papers</h2>
+                    <div class="tbl-header">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                        <thead>
+                            <tr>
+                            <th>Subject</th>
+                            <th>ID</th>
+                            <th>Exam board</th>
+                            <th>Year published</th>
+                            <th>Difficulty Level</th>
+                            </tr>
+                        </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                            <td>Econ</td>
+                            <td>328109</td>
+                            <td>Cambridge</td>
+                            <td>2018</td>
+                            <td>2/10</td>
+                            </tr>
+                            <tr>
+                            <td>Econ</td>
+                            <td>25266</td>
+                            <td>Cambridge</td>
+                            <td>2002</td>
+                            <td>2/10</td>
+                            </tr>
+                            <tr>
+                            <td>Econ</td>
+                            <td>25454</td>
+                            <td>IB</td>
+                            <td>2021</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>2542554</td>
+                            <td>AQA</td>
+                            <td>2016</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>452245</td>
+                            <td>CIE</td>
+                            <td>2008</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>545jh24</td>
+                            <td>Edexcel</td>
+                            <td>2009</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>245hgk25</td>
+                            <td>Edexcel</td>
+                            <td>2020</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>Maths</td>
+                            <td>2534kjhgh</td>
+                            <td>Cambridge</td>
+                            <td>2005</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>English</td>
+                            <td>235gh242</td>
+                            <td>AQA</td>
+                            <td>2019</td>
+                            <td>3/10</td>
+                            </tr>
+                            <tr>
+                            <td>English</td>
+                            <td>678945hgjk25</td>
+                            <td>Edexcel</td>
+                            <td>2007</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>45guyh2</td>
+                            <td>CIE</td>
+                            <td>2017</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>534254khgj2</td>
+                            <td>IB</td>
+                            <td>2014</td>
+                            <td>8/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>345hgjk4</td>
+                            <td>Edexcel</td>
+                            <td>2007</td>
+                            <td>7/10</td>
+                            </tr>
+                            <tr>
+                            <td>German</td>
+                            <td>4235gkj2</td>
+                            <td>AQA</td>
+                            <td>2014</td>
+                            <td>6/10</td>
+                            </tr>
+                            <tr>
+                            <td>Spanish</td>
+                            <td>25jkh24</td>
+                            <td>AQA</td>
+                            <td>2019</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Spanish</td>
+                            <td>534hlkj23</td>
+                            <td>IB</td>
+                            <td>2018</td>
+                            <td>9/10</td>
+                            </tr>
+                            <tr>
+                            <td>Spanish</td>
+                            <td>435g25</td>
+                            <td>Edexcel</td>
+                            <td>2015</td>
+                            <td>5/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>uyig2354</td>
+                            <td>Cambridge</td>
+                            <td>2015</td>
+                            <td>8/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>245ghk</td>
+                            <td>CIE</td>
+                            <td>2019</td>
+                            <td>6/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>345jlk2</td>
+                            <td>AQA</td>
+                            <td>2003</td>
+                            <td>3/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>4352jkh425</td>
+                            <td>AQA</td>
+                            <td>2009</td>
+                            <td>5.4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>525jkl4</td>
+                            <td>AQA</td>
+                            <td>2005</td>
+                            <td>4/10</td>
+                            </tr>
+                            <tr>
+                            <td>Turkish</td>
+                            <td>5253hl5</td>
+                            <td>Edexcel</td>
+                            <td>2013</td>
+                            <td>6/10</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                   
+
+        </div>
+
+
+    </div>
+
+    
+
+
+</body>
+</html>
