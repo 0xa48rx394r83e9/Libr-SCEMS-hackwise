@@ -58,10 +58,16 @@
         
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
         body{
-            background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-            background: linear-gradient(to right, #25c481, #25b7c4);
+            background: linear-gradient(to bottom right,#fec811, #e73600, #b400cf); 
+			background-size: 2000% 100%;
+			animation: gradient 4s linear infinite;
+			animation-direction: alternate;
             font-family: 'Roboto', sans-serif;
         }
+        @keyframes gradient {
+			0% {background-position: 0%}
+			100% {background-position: 100%}
+		}
 
         
 

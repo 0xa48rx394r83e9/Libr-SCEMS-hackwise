@@ -60,10 +60,16 @@
 
     body {
       font-family: 'Biome';
-      background-image: linear-gradient(to bottom right, 
-      #ff2656, #173df7);
+      background: linear-gradient(to bottom right,#fec811, #e73600, #b400cf); 
+			background-size: 2000% 100%;
+			animation: gradient 4s linear infinite;
+			animation-direction: alternate;
       font-size: .925rem;
     }
+    @keyframes gradient {
+			0% {background-position: 0%}
+			100% {background-position: 100%}
+		}
     /*font-family: 'Inter', sans-serif;*/
     /*background-color: var(--dk-darker-bg);*/
 
@@ -576,9 +582,6 @@
                   <a class="nav-link" href="#"><i class="uil-comments-alt"></i><span>23</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="uil-bell"></i><span>98</span></a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#">
                     <i data-show="show-side-navigation1" class="uil-bars show-side-btn"></i>
                   </a>
@@ -759,4 +762,8 @@
           </section>
         </div>
       </section>
+      <div class="content rounded-3 p-3">
+        <h1 class="fs-3">Hello Student, welcome to your awesome dashboard!</h1>
+        <p class="mb-0">We wish you a productive day</p>
+      </div>
 </body>
