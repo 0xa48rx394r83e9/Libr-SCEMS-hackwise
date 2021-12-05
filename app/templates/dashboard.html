@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="dashboard.css">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome" rel="stylesheet" type="text/css"/>
   <script>"use strict";
@@ -36,18 +35,18 @@
     @import "//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome";
 
     :root {
-      --dk-gray-100: #F3F4F6;
-      --dk-gray-200: #E5E7EB;
-      --dk-gray-300: #D1D5DB;
-      --dk-gray-400: #9CA3AF;
+      --dk-gray-100: #000000;
+      --dk-gray-200: #000000;
+      --dk-gray-300: #000000;
+      --dk-gray-400: #000000;
       --dk-gray-500: #6B7280;
       --dk-gray-600: #4B5563;
       --dk-gray-700: #374151;
       --dk-gray-800: #1F2937;
       --dk-gray-900: #111827;
-      --dk-dark-bg: #313348;
-      --dk-darker-bg: #2a2b3d;
-      --navbar-bg-color: #6f6486;
+      --dk-dark-bg: #ffffff;
+      --dk-darker-bg: #ffffff;
+      --navbar-bg-color: #ffffff;
       --sidebar-bg-color: #252636;
       --sidebar-width: 250px;
     }
@@ -60,12 +59,13 @@
 
     body {
       font-family: 'Biome';
-      background: linear-gradient(to bottom right,#fec811, #e73600, #b400cf); 
+      background-image: linear-gradient(to bottom right,#fec811, #e73600, #b400cf); 
 			background-size: 2000% 100%;
 			animation: gradient 4s linear infinite;
 			animation-direction: alternate;
       font-size: .925rem;
     }
+	
     @keyframes gradient {
 			0% {background-position: 0%}
 			100% {background-position: 100%}
@@ -199,6 +199,7 @@
     -------------------------------- */
     .welcome {
       color: var(--dk-gray-300);
+      opacity: 0.7;
     }
 
     .welcome .content {
@@ -221,6 +222,7 @@
 
     .statistics .box {
       background-color: var(--dk-dark-bg);
+      opacity: 0.7;
     }
 
     .statistics .box i {
@@ -255,6 +257,7 @@
     -------------------------------- */
     .admins .box .admin {
       background-color: var(--dk-dark-bg);
+      opacity: 0.7;
     }
 
     .admins .box h3 {
@@ -273,6 +276,7 @@
     -------------------------------- */
     .statis {
       color: var(--dk-gray-100);
+      opacity: 0.7;
     }
 
     .statis .box {
@@ -313,15 +317,10 @@
       color: #ffc107
     }
 
-    /** --------------------------------
-    -- Please don't do that in real-world projects!
-    -- overwrite Bootstrap variables instead.
-    -------------------------------- */
 
     .navbar {
       border: none !important;
-      background-image: linear-gradient(to right,
-      #aa29c9, #1180df,#34e084);
+      background-color: #2b133d;
     }
     /*background-color: var(--navbar-bg-color) !important;*/
     .navbar .dropdown-menu {
@@ -433,7 +432,7 @@
 
 
 <body>
-  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+  <aside style="background-color: #2b133d;" class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
     <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
     <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
       <img
@@ -443,7 +442,7 @@
            alt="">
       <div class="ms-2">
         <h5 class="fs-6 mb-0">
-          <a class="text-decoration-none" href="">Jane Doe</a>
+          <a class="text-decoration-none" href="/profile"><b style="color: white;">Jane Doe</b></a>
         </h5>
         <p class="mt-1 mb-0"></p>
       </div>
@@ -456,90 +455,34 @@
   
     <ul class="categories list-unstyled">
       <li class="has-dropdown">
-        <i class="uil-estate fa-fw"></i><a href="/dashboard"><b style="color: crimson;"> Dashboard</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-estate fa-fw"></i><a href="/dashboard"><b style="color: white;"> Dashboard</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-shopping-cart-alt"></i><a href="/classroom"><b style="color: white;"> Classrooms</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href=""><b style="color: white;"> Mailbox</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href="/mentor"><b style="color: white;"> Mentors</b></a>
       </li>
       <li class="">
-        <i class="uil-folder"></i><a href="/projects"><b style="color: orange;"> Materials</b></a>
+        <i class="uil-folder"></i><a href="/projects"><b style="color: white;"> Materials</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-calendar-alt"></i><a href=""><b style="color: yellow;"> Calendar</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-calendar-alt"></i><a href=""><b style="color: white;"> Calendar</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-envelope-download fa-fw"></i><a href=""><b style="color: lime;"> Mailbox</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-panel-add"></i><a href="/courses"><b style="color: white;">Courses</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-shopping-cart-alt"></i><a href="/classroom"><b style="color: turquoise;"> Classrooms</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <i class="uil-bag"></i><a href=""><b style="color: blue;"> Practice</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-bag"></i><a href="/past_papers"><b style="color: white;"> Practice</b></a>
       </li>
       <li class="">
-        <i class="uil-setting"></i><a href=""><b style="color: purple;"> Settings</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-setting"></i><a href=""><b style="color: white;"> Settings</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-chart-pie-alt"></i><a href="/past_papers"><b style="color: violet;"> Past Papers</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <i class="uil-panel-add"></i><a href="/courses"><b style="color: gold;">Courses</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <i class="uil-language-selection"></i><a href=""><b style="color: skyblue;"> Language Menu</b></a>
+        <i class="uil-language-selection"></i><a href=""><b style="color: white;"> Language Menu</b></a>
           <select name="language-picker-select" id="language-picker-select">
             <option>English</option>
             <option>Deutsch</option>
@@ -552,7 +495,7 @@
             <!-- other language options -->
           </select>
       <li class="">
-        <i class="uil-map-marker"></i><a href=""><b style="color: red;">Help Line</b></a>
+        <i class="uil-map-marker"></i><a href=""><b style="color: white;">Help Line</b></a>
       </li>
     </ul>
   </aside>
@@ -639,7 +582,6 @@
 
       
           <section class="admins mt-4">
-            <h1 style="color: white;">Your Teachers</h1>
             <div class="row">
               <div class="col-md-6">
                 <div class="box">
@@ -651,7 +593,7 @@
                            src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/man5-512.png"
                            alt="admin">
                     </div>
-                    <div class="ms-3">
+                    <div class="ms-3" style="background-color: white; opacity: 0.7;"">
                       <h3 class="fs-5 mb-1">Romão Waldemar</h3>
                       <p class="mb-0">Mathematics | Class at 3pm</p>
                     </div>
@@ -762,8 +704,4 @@
           </section>
         </div>
       </section>
-      <div class="content rounded-3 p-3">
-        <h1 class="fs-3">Hello Student, welcome to your awesome dashboard!</h1>
-        <p class="mb-0">We wish you a productive day</p>
-      </div>
 </body>

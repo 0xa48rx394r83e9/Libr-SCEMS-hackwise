@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+@import "//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome";
+
 @supports (display: grid) {
 
     .grid {

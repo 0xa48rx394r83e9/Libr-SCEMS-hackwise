@@ -12,7 +12,8 @@
 
 
     /* Font */
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+    @import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+    @import "//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome";
 
     /* Design */
     *,
@@ -27,7 +28,7 @@
 
     body {
       color: #272727;
-      font-family: 'Quicksand', serif;
+      font-family: 'Biome';
       font-style: normal;
       font-weight: 400;
       letter-spacing: 0;
@@ -310,15 +311,11 @@
 
 
   </style>
-
-
-
-
 </head>
 
 
-<body>
-  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+<body style="padding-left: 0px;">
+  <aside style="background-color: #2b133d; margin-left: -1rem;" class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
     <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
     <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
       <img
@@ -328,7 +325,7 @@
            alt="">
       <div class="ms-2">
         <h5 class="fs-6 mb-0">
-          <a class="text-decoration-none" href="#">Jane Doe</a>
+          <a class="text-decoration-none" href="/profile"><b style="color: white;">Jane Doe</b></a>
         </h5>
         <p class="mt-1 mb-0"></p>
       </div>
@@ -341,80 +338,34 @@
   
     <ul class="categories list-unstyled">
       <li class="has-dropdown">
-        <i class="uil-estate fa-fw"></i><a href="/dashboard"><b style="color: crimson;"> Dashboard</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-estate fa-fw"></i><a href="/dashboard"><b style="color: white;"> Dashboard</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-shopping-cart-alt"></i><a href="/classroom"><b style="color: white;"> Classrooms</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href=""><b style="color: white;"> Mailbox</b></a>
+      </li>
+      <li class="has-dropdown">
+        <i class="uil-envelope-download fa-fw"></i><a href="/mentor"><b style="color: white;"> Mentors</b></a>
       </li>
       <li class="">
-        <i class="uil-folder"></i><a href="/projects"><b style="color: orange;"> Materials</b></a>
+        <i class="uil-folder"></i><a href="/projects"><b style="color: white;"> Materials</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-calendar-alt"></i><a href="#"><b style="color: yellow;"> Calendar</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-calendar-alt"></i><a href=""><b style="color: white;"> Calendar</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-envelope-download fa-fw"></i><a href="#"><b style="color: lime;"> Mailbox</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-panel-add"></i><a href="/courses"><b style="color: white;">Courses</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-shopping-cart-alt"></i><a href="/classroom"><b style="color: turquoise;"> Classrooms</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-bag"></i><a href="/past_papers"><b style="color: white;"> Practice</b></a>
       </li>
       <li class="">
-        <i class="uil-setting"></i><a href="#"><b style="color: purple;"> Settings</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
+        <i class="uil-setting"></i><a href=""><b style="color: white;"> Settings</b></a>
       </li>
       <li class="has-dropdown">
-        <i class="uil-chart-pie-alt"></i><a href="/past_papers"><b style="color: violet;"> Past Papers</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <i class="uil-panel-add"></i><a href="/courses"><b style="color: gold;"> Courses</b></a>
-        <ul class="sidebar-dropdown list-unstyled">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">ipsum dolor</a></li>
-          <li><a href="#">dolor ipsum</a></li>
-          <li><a href="#">amet consectetur</a></li>
-          <li><a href="#">ipsum dolor sit</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <i class="uil-language-selection"></i><a href="#"><b style="color: skyblue;"> Language Menu</b></a>
+        <i class="uil-language-selection"></i><a href=""><b style="color: white;"> Language Menu</b></a>
           <select name="language-picker-select" id="language-picker-select">
             <option>English</option>
             <option>Deutsch</option>
@@ -427,12 +378,11 @@
             <!-- other language options -->
           </select>
       <li class="">
-        <i class="uil-map-marker"></i><a href="#"><b style="color: red;">Help Line</b></a>
+        <i class="uil-map-marker"></i><a href=""><b style="color: white;">Help Line</b></a>
       </li>
     </ul>
   </aside>
-    <div class="main">
-        <h1>Courses</h1>
+        
         <ul class="cards">
           <li class="cards_item">
             <div class="card">
@@ -599,5 +549,5 @@
               </div>
             </li>
           </ul>
-    </div> 
+  </div> 
 </body>

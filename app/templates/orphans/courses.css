@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+@import "//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome";
 
 /* Design */
 *,
@@ -30,7 +14,7 @@ html {
 
 body {
   color: #272727;
-  font-family: 'Quicksand', serif;
+  font-family: 'Biome';
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
