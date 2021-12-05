@@ -2,7 +2,8 @@
 
 {% block head %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="templates/main.css">
+    <script src="/node_modules/bulma-extensions/bulma-switch/dist/bulma-switch.min.js"></script>
+	<link rel="stylesheet" href="templates/main.css">
 	<style type="text/css">
 		.login-header {
 			padding: 50px;
@@ -132,10 +133,45 @@
 			padding-right: 7px;
 			margin-top: -3px;
 		}
+		input[type="checkbox"] {
+			width: 0;
+			height: 0;
+			visibility: hidden;
+		}
+		label {
+			display: block;
+			width: 50px;
+			height: 30px;
+			background-color: #477a85;
+			border-radius: 20px;
+			position: relative;
+			cursor: pointer;
+			transition: 0.5s;
+			box-shadow: 0 0 20px #477a8550;
+		}
+		  label::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background-color: #e8f5f7;
+			position: absolute;
+			border-radius: 12px;
+			top: 3px;
+			left: 3px;
+			transition: 0.5s;
+		}
+		input:checked + label:after {
+			left: calc(100% - 10px);
+			transform: translateX(-100%);
+		}
+		input:checked + label {
+			background-color: #243d42;
+		}
+		label:active:after {
+			width: 32px;
+		}
 	</style>
 {% endblock head %}
-
-
 {% block content %}
 
 <section class="login">
@@ -145,7 +181,7 @@
             <div class="contact">
 
 
-                <form method="POST" action="/login">
+                <form method="POST" action="/signup">
                     <h3 style="color: #452A5A;">Sign Up</h3>
 					{% with messages = get_flashed_messages() %}
 					{% if messages %}
@@ -171,8 +207,7 @@
                             <input class="input is-large" type="password" name="password" placeholder="Your Password">
                         </div>
                     </div>
-
-                    <button class="submit">LET'S GO</button>
+					<button class="submit">LET'S GO</button>
                 </form>
 
 

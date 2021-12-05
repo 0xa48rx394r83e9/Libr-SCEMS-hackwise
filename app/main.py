@@ -44,7 +44,7 @@ def projects():
 
 @main.route('/mentor') #WIP
 @login_required
-def universities():
+def mentor():
     return render_template('mentor.html', name=current_user.name)
 
 from time import time
