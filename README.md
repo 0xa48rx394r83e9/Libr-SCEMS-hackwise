@@ -58,8 +58,8 @@ Our Presentation: https://www.youtube.com/watch?v=T1esgEwWL38
 
 
 ## Credit (Our 5 teammembers):
--Joseph Paulmer  (0xa48rx394r83e9)
--Mateo Weigel    (MateoW-32)
--Jayden Chee     (ChaoticPsycho)
--Brenden Chee    (Skywalkerbc22)
--Taisei Yasuno   (KaiserLab)
+    -Joseph Paulmer  (0xa48rx394r83e9)
+    -Mateo Weigel    (MateoW-32)
+    -Jayden Chee     (ChaoticPsycho)
+    -Brenden Chee    (Skywalkerbc22)
+    -Taisei Yasuno   (KaiserLab)
